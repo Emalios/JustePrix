@@ -9,11 +9,8 @@ public class Main
 
     public static void main(String[] args)
     {
-
         System.out.println(Reference.WELCOME);
-
-        Game game = new Game(100);
-        game.findPrice();
-
+        RobotResolver robotResolver = new RobotResolver(100, 1000);
+        robotResolver.resolveAll();
     }
 }
