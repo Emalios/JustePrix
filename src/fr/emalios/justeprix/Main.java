@@ -12,10 +12,7 @@ public class Main
 
         System.out.println(Reference.WELCOME);
 
-        int price = new RandomPrice(100)
-                .generateRandomPrice();
-
-        Game game = new Game(price);
+        Game game = new Game(100);
         game.findPrice();
 
     }
