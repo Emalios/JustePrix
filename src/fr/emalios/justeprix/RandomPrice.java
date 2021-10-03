@@ -10,15 +10,13 @@ public class RandomPrice
 {
 
     private Random random;
-    private int max;
 
-    public RandomPrice(int max)
+    public RandomPrice()
     {
         this.random = new Random();
-        this.max = max;
     }
 
-    public Integer generateRandomPrice()
+    public Integer generateRandomPrice(int max)
     {
         return random.nextInt(max);
     }

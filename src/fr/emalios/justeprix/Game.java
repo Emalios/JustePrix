@@ -9,12 +9,14 @@ import java.util.Scanner;
 class Game
 {
 
+    private static final RandomPrice randomPrice = new RandomPrice();
+
     private int price;
     private Scanner scanner;
 
-    Game(int price)
+    Game(int maxPrice)
     {
-        this.price = price;
+        this.price = randomPrice.generateRandomPrice(maxPrice);
         this.scanner = new Scanner(System.in);
     }
 
